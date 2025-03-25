@@ -103,7 +103,7 @@
       "vue-tsc@2.2.8": "patches/vue-tsc@2.2.8.patch",
       "eslint-plugin-n8n-local-rules": "patches/eslint-plugin-n8n-local-rules.patch"
     },
-      "dependencies": {
+    "dependencies": {
       "n8n": "^1.0.0",
       "n8n-nodes-mcp-client": "^1.0.0"
       }
