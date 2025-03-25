@@ -43,7 +43,8 @@
     "test:nodes": "turbo run test:nodes --concurrency=1",
     "watch": "turbo run watch --parallel",
     "webhook": "./packages/cli/bin/n8n webhook",
-    "worker": "./packages/cli/bin/n8n worker"
+    "worker": "./packages/cli/bin/n8n worker",
+    "start": "n8n"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.0",
@@ -102,6 +103,14 @@
       "@types/uuencode@0.0.3": "patches/@types__uuencode@0.0.3.patch",
       "vue-tsc@2.2.8": "patches/vue-tsc@2.2.8.patch",
       "eslint-plugin-n8n-local-rules": "patches/eslint-plugin-n8n-local-rules.patch"
+    },
+    {
+     "name": "n8n-instance",
+     "version": "1.0.0",
+     "dependencies": {
+        "n8n": "^1.0.0",
+        "n8n-nodes-mcp-client": "^1.0.0"
+      }
     }
   }
 }
